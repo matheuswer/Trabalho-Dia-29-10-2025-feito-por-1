@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const senha = passwordInput.value.trim();
 
             if (autenticar(usuario, senha)) {
-                window.location.href = "../index.html";
+                // usuário autenticado -> redirecionar para a página principal do site
+                window.location.href = "principal.html";
             } else {
                 alert("Erro ao fazer login. Tente novamente.");
             }

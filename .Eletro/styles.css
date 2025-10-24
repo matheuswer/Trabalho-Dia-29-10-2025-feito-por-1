@@ -58,6 +58,35 @@ header nav ul li:hover::after {
     width: 100%;
 }
 
+/* Área de autenticação (logout) no header */
+.auth-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logout-btn {
+    padding: 8px 14px;
+    background: linear-gradient(90deg, #ff3b8d, #8e2de2);
+    border-radius: 20px;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 6px 18px rgba(142, 45, 226, 0.18), 0 0 20px rgba(255, 59, 141, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(142, 45, 226, 0.25), 0 0 30px rgba(255, 59, 141, 0.12);
+}
+
+.logout-btn:active {
+    transform: translateY(0);
+}
+
 .container {
     height: 100vh;
     position: relative;
