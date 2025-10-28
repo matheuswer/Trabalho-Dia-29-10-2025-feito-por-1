@@ -1,1 +1,8 @@
-# Trabalho-Dia-29-10-2025-feito-por-1
+#  Eletro Loja
+
+Um site fictício de tecnologia e eletrônicos, com design moderno e animações suaves.  
+O projeto inclui uma **página principal interativa** e uma **tela de login funcional**.
+
+---
+
+##  Estrutura do Projeto
