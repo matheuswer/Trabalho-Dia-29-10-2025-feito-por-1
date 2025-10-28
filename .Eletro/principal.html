@@ -23,9 +23,8 @@
                 <li>Contatos</li>
             </ul>
         </nav>
-        <!-- botão de logout adicionado -->
         <div class="auth-actions">
-            <button id="logoutBtn" class="logout-btn" aria-label="Sair">Sair</button>
+            <button id="logoutBtn" class="logout-btn" 
         </div>
     </header>
 
@@ -113,29 +112,25 @@
 <script src="./scripts.js"></script>
 
 <script>
-    // Proteção simples: se não estiver logado, volta para a página de login (index.html)
     document.addEventListener('DOMContentLoaded', () => {
         try {
             const logado = localStorage.getItem('logado');
             if (logado !== 'true') {
-                // não está logado -> redireciona para a página de login
                 window.location.href = 'index.html';
                 return;
             }
 
-            // Ativar botão de logout
+
             const logoutBtn = document.getElementById('logoutBtn');
             if (logoutBtn) {
                 logoutBtn.addEventListener('click', () => {
                     localStorage.removeItem('usuarioLogado');
                     localStorage.removeItem('logado');
-                    // volta para a tela de login
                     window.location.href = 'index.html';
                 });
             }
         } catch (err) {
             console.error('Erro ao verificar autenticação:', err);
-            // Em caso de erro, forçar retorno à tela de login
             window.location.href = 'index.html';
         }
     });

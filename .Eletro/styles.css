@@ -58,7 +58,7 @@ header nav ul li:hover::after {
     width: 100%;
 }
 
-/* Área de autenticação (logout) no header */
+
 .auth-actions {
     display: flex;
     align-items: center;
