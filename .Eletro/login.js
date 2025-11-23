@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Elementos do formulário
+    
     const loginForm = document.getElementById("loginForm");
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
 
-    // Função para validar campos
+    
     const validarCampos = () => {
         const usuario = usernameInput.value.trim();
         const senha = passwordInput.value.trim();
@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
     };
 
-    // Função para simular autenticação
+    
     const autenticar = (usuario, senha) => {
-        // Aqui você pode adicionar sua lógica de autenticação real
+        
         try {
-            // Armazenar informações do usuário
+            
             localStorage.setItem("usuarioLogado", usuario);
             localStorage.setItem("logado", "true");
             return true;
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Evento de submit do formulário
+    
     loginForm.addEventListener("submit", (evento) => {
         evento.preventDefault();
 
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const senha = passwordInput.value.trim();
 
             if (autenticar(usuario, senha)) {
-                // usuário autenticado -> redirecionar para a página principal do site
+                
                 window.location.href = "principal.html";
             } else {
                 alert("Erro ao fazer login. Tente novamente.");
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Limpar campos ao carregar a página
+    
     usernameInput.value = "";
     passwordInput.value = "";
 });
