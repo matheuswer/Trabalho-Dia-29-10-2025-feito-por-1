@@ -55,5 +55,5 @@ Banco de dados (versão Fullstack)
 
 👨‍💻 Autor
 
-Matheus Wer
+Matheus Werneck
 Projeto desenvolvido para estudo e apresentação escolar.
