@@ -4,7 +4,7 @@ E-commerce front-end responsivo desenvolvido como parte do Trabalho do dia 29/10
 
 📌 Sobre o projeto
 
-A GitHub Pages EletroLoja é uma simulação de loja online de eletrônicos, com layout moderno e navegação intuitiva, construída somente com tecnologias de front-end.
+A EletroLoja é uma simulação de loja online de eletrônicos, com layout moderno e navegação intuitiva, construída somente com tecnologias de front-end.
 
 📁 Estrutura do projeto
 /
